@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>เรียนรู้ถิ่นท่าบ่อ</title>
+  <title>เรียนรู้ถิ่นท่าบ่อ | จังหวัดหนองคาย</title>
 
   <style>
     * {
@@ -15,37 +15,42 @@
 
     body {
       font-family: Tahoma, sans-serif;
-      background: #f4fbf8;
+      background: #f3faf6;
       color: #263b35;
       line-height: 1.8;
     }
 
     header {
-      background: linear-gradient(135deg, #087f70, #35b99a);
+      background: linear-gradient(135deg, #075b50, #35b99a);
       color: white;
       text-align: center;
-      padding: 42px 16px;
+      padding: 48px 18px;
     }
 
     header h1 {
-      font-size: 2rem;
-      margin-bottom: 8px;
+      font-size: 2.2rem;
+      margin-bottom: 10px;
     }
 
     nav {
-      background: #075b50;
+      background: #064b42;
       padding: 12px;
       text-align: center;
       position: sticky;
       top: 0;
+      z-index: 10;
     }
 
     nav a {
+      display: inline-block;
       color: white;
       text-decoration: none;
-      margin: 0 10px;
-      display: inline-block;
+      padding: 5px 10px;
       font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffe08a;
     }
 
     main {
@@ -56,10 +61,10 @@
 
     section {
       background: white;
-      padding: 24px;
+      padding: 25px;
       margin: 20px 0;
       border-radius: 16px;
-      box-shadow: 0 4px 14px #0000000d;
+      box-shadow: 0 4px 15px #0000000d;
     }
 
     h2 {
@@ -67,18 +72,26 @@
       margin-bottom: 12px;
     }
 
+    .hero {
+      text-align: center;
+      background: #e1f5eb;
+      border: 1px solid #c8e9d8;
+    }
+
     .cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(
+        auto-fit, minmax(220px, 1fr)
+      );
       gap: 16px;
-      margin-top: 16px;
+      margin-top: 18px;
     }
 
     .card {
-      background: #eaf8f2;
-      padding: 18px;
+      background: #edf8f1;
+      padding: 20px;
       border-radius: 12px;
-      border-left: 5px solid #22a887;
+      border-left: 5px solid #25a887;
     }
 
     .card h3 {
@@ -87,17 +100,289 @@
     }
 
     .quiz-question {
-      margin: 16px 0;
-      padding: 14px;
-      background: #f2faf6;
+      margin: 18px 0;
+      padding: 16px;
+      background: #f1faf5;
       border-radius: 10px;
     }
 
     label {
       display: block;
-      margin: 6px 0;
+      margin: 7px 0;
       cursor: pointer;
     }
 
     button {
-     
+      background: #087f70;
+      color: white;
+      border: none;
+      padding: 12px 22px;
+      border-radius: 9px;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 8px 5px 0 0;
+    }
+
+    button:hover {
+      background: #064b42;
+    }
+
+    #result {
+      color: #087f70;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    footer {
+      background: #064b42;
+      color: white;
+      text-align: center;
+      padding: 24px 15px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.7rem;
+      }
+
+      nav a {
+        font-size: 14px;
+        padding: 4px;
+      }
+
+      section {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🌿 เรียนรู้ถิ่นท่าบ่อ</h1>
+    <p>เปิดโลกการเรียนรู้ สืบสานภูมิปัญญาท้องถิ่น</p>
+    <p>อำเภอท่าบ่อ จังหวัดหนองคาย</p>
+  </header>
+
+  <nav>
+    <a href="#home">หน้าแรก</a>
+    <a href="#history">ประวัติชุมชน</a>
+    <a href="#places">แหล่งเรียนรู้</a>
+    <a href="#wisdom">ภูมิปัญญา</a>
+    <a href="#quiz">แบบทดสอบ</a>
+  </nav>
+
+  <main>
+
+    <section id="home" class="hero">
+      <h2>💚 ยินดีต้อนรับสู่ชุมชนท่าบ่อ</h2>
+      <p>
+        เว็บไซต์เรียนรู้ชุมชนท่าบ่อ จัดทำขึ้นเพื่อส่งเสริม
+        ให้นักเรียนรู้จักประวัติความเป็นมา สถานที่สำคัญ
+        วิถีชีวิต วัฒนธรรม และภูมิปัญญาท้องถิ่น
+        โดยใช้เทคโนโลยีดิจิทัลเป็นเครื่องมือในการเรียนรู้
+        และประชาสัมพันธ์ชุมชน
+      </p>
+    </section>
+
+    <section id="history">
+      <h2>📖 ประวัติชุมชนท่าบ่อ</h2>
+      <p>
+        ท่าบ่อเป็นอำเภอหนึ่งของจังหวัดหนองคาย
+        มีวิถีชีวิตและวัฒนธรรมที่เชื่อมโยงกับชุมชน
+        ในภาคตะวันออกเฉียงเหนือและพื้นที่ลุ่มแม่น้ำโขง
+        นักเรียนสามารถค้นคว้าประวัติชุมชนเพิ่มเติมจาก
+        เอกสารราชการ ผู้รู้ในท้องถิ่น และแหล่งข้อมูลที่เชื่อถือได้
+      </p>
+      <p>
+        <strong>กิจกรรมการเรียนรู้:</strong>
+        สัมภาษณ์ผู้สูงอายุในชุมชน แล้วบันทึกเรื่องราวที่น่าสนใจ
+      </p>
+    </section>
+
+    <section id="places">
+      <h2>📍 แหล่งเรียนรู้ในชุมชน</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>🏛️ วัดและศาสนสถาน</h3>
+          <p>
+            เรียนรู้ประวัติ ศิลปวัฒนธรรม
+            และประเพณีที่สืบทอดในชุมชน
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>🛍️ ตลาดและอาชีพ</h3>
+          <p>
+            สำรวจอาหารพื้นบ้าน สินค้าท้องถิ่น
+            และอาชีพที่สร้างรายได้ให้ชุมชน
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>🌊 วิถีชีวิตริมแม่น้ำโขง</h3>
+          <p>
+            ศึกษาความสัมพันธ์ระหว่างผู้คน
+            ธรรมชาติ และสิ่งแวดล้อม
+          </p>
+        </div>
+      </div>
+
+      <p style="margin-top:16px">
+        หมายเหตุ: ควรเพิ่มชื่อสถานที่จริง ภาพถ่าย
+        และข้อมูลที่ตรวจสอบแล้วจากพื้นที่
+      </p>
+    </section>
+
+    <section id="wisdom">
+      <h2>🧺 ภูมิปัญญาท้องถิ่น</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>🍲 อาหารพื้นบ้าน</h3>
+          <p>
+            รวบรวมสูตรอาหาร วัตถุดิบ
+            และเรื่องราวจากคนในชุมชน
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>🧵 งานหัตถกรรม</h3>
+          <p>
+            เรียนรู้ทักษะงานฝีมือ
+            และความรู้จากปราชญ์ชาวบ้าน
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>🎉 ประเพณีท้องถิ่น</h3>
+          <p>
+            ศึกษาความหมายและคุณค่าของ
+            ประเพณีที่สืบทอดจากรุ่นสู่รุ่น
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="quiz">
+      <h2>📝 แบบทดสอบท้ายบท</h2>
+      <p>ตอบคำถามทั้ง 3 ข้อ แล้วกดตรวจคำตอบ</p>
+
+      <form id="quizForm">
+
+        <div class="quiz-question">
+          <p><strong>1. ท่าบ่อเป็นอำเภอของจังหวัดใด?</strong></p>
+          <label>
+            <input type="radio" name="q1" value="a">
+            ก. อุดรธานี
+          </label>
+          <label>
+            <input type="radio" name="q1" value="b">
+            ข. หนองคาย
+          </label>
+          <label>
+            <input type="radio" name="q1" value="c">
+            ค. เลย
+          </label>
+        </div>
+
+        <div class="quiz-question">
+          <p><strong>2. หากต้องการศึกษาประวัติชุมชน ควรทำอย่างไร?</strong></p>
+          <label>
+            <input type="radio" name="q2" value="a">
+            ก. สัมภาษณ์ผู้รู้และตรวจสอบหลักฐาน
+          </label>
+          <label>
+            <input type="radio" name="q2" value="b">
+            ข. คาดเดาโดยไม่หาข้อมูล
+          </label>
+          <label>
+            <input type="radio" name="q2" value="c">
+            ค. คัดลอกข้อมูลที่ไม่ทราบแหล่งที่มา
+          </label>
+        </div>
+
+        <div class="quiz-question">
+          <p><strong>3. ก่อนเผยแพร่ข้อมูลชุมชนออนไลน์ควรทำอย่างไร?</strong></p>
+          <label>
+            <input type="radio" name="q3" value="a">
+            ก. โพสต์ทันทีโดยไม่ตรวจสอบ
+          </label>
+          <label>
+            <input type="radio" name="q3" value="b">
+            ข. เผยแพร่ข้อมูลส่วนตัวของผู้อื่น
+          </label>
+          <label>
+            <input type="radio" name="q3" value="c">
+            ค. ตรวจสอบข้อมูลและเคารพสิทธิผู้อื่น
+          </label>
+        </div>
+
+        <button type="submit">ตรวจคำตอบ</button>
+        <button type="reset" style="background:#64748b">
+          เริ่มใหม่
+        </button>
+
+        <p id="result" aria-live="polite"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p><strong>เรียนรู้ถิ่นท่าบ่อ</strong></p>
+    <p>สื่อการเรียนรู้วิชาวิทยาการคำนวณ</p>
+    <p>อำเภอท่าบ่อ จังหวัดหนองคาย</p>
+    <p>© 2026 เว็บไซต์เพื่อการศึกษา</p>
+  </footer>
+
+  <script>
+    const quizForm = document.getElementById("quizForm");
+    const result = document.getElementById("result");
+
+    quizForm.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const answers = {
+        q1: "b",
+        q2: "a",
+        q3: "c"
+      };
+
+      let score = 0;
+      let unanswered = 0;
+
+      for (const question in answers) {
+        const selected = quizForm.querySelector(
+          'input[name="' + question + '"]:checked'
+        );
+
+        if (!selected) {
+          unanswered++;
+        } else if (selected.value === answers[question]) {
+          score++;
+        }
+      }
+
+      if (unanswered > 0) {
+        result.textContent =
+          "กรุณาตอบคำถามให้ครบทั้ง 3 ข้อค่ะ";
+        return;
+      }
+
+      result.textContent =
+        "คะแนนของคุณคือ " + score + " / 3 คะแนน " +
+        (score === 3
+          ? "ยอดเยี่ยมมาก! 🎉"
+          : "ลองทบทวนแล้วทำอีกครั้งนะคะ 💚");
+    });
+
+    quizForm.addEventListener("reset", function() {
+      result.textContent = "";
+    });
+  </script>
+
+</body>
+</html>
